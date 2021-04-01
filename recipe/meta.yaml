@@ -1,5 +1,5 @@
 {% set name = "des-sxdes" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/esheldon/sxdes/archive/{{ version }}.tar.gz
-  sha256: 320c24b2c08d3685658ee4db712ff9f959e809cb47b2144a8b9c09d42f629d77
+  sha256: 3d4c7d201724213139d99333b1e8558ea7a98fc769dde46559b07eeff150db79
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
-  summary: 'Run the sep code with DES settings'
+  summary: Run the sep code with DES settings
 
 extra:
   recipe-maintainers:
