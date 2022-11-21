@@ -1,5 +1,5 @@
 {% set name = "des-sxdes" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/esheldon/sxdes/archive/{{ version }}.tar.gz
-  sha256: 3d4c7d201724213139d99333b1e8558ea7a98fc769dde46559b07eeff150db79
+  sha256: 73a00681acca558d13c5c67baa2e604db354f7770f3538494b91941c43592b53
 
 build:
   noarch: python
